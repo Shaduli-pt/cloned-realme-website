@@ -25,7 +25,7 @@ body{
 .navbar ul{
   display: flex;
   position: relative;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   list-style: none;
   text-decoration: none;
@@ -34,6 +34,9 @@ body{
   padding: 0px;
   gap: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar li:hover{
+  color: orange;
 }
 .list1 li{
   float: left;
@@ -168,11 +171,8 @@ body{
     font-weight: 700;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-  .button1:hover{
-    background-color: white;
-  }
   .button .button1 :hover{
-    color: black;
+    color: rgb(222, 213, 213);
   }
   .button2:hover{
     background-color: rgba(255, 255, 255, 0.2);
@@ -181,92 +181,201 @@ body{
     margin-top: 11px;
     display: flex;
   }
-  .subdiv1{
-    height: 425px; 
+ 
+  .subdiv1 {
+    position: relative;
     width: 50%;
-    margin-right: 5px;
+    height: 425px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('./assets/images/img5.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    color: black; 
+    color: white; 
+    overflow: hidden;
   }
-  .subdiv2{
+  
+  .subdiv1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/images/img5.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .subdiv1:hover::before {
+    transform: scale(1.2); 
+  }
+  
+  /* ----------------- */
+  
+  .subdiv2 {
+    position: relative;
+    width: 50%; 
     height: 425px; 
-    width: 50%;
-    margin-left: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white; 
+    overflow: hidden;
+  }
+  
+  .subdiv2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('./assets/images/img6.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .subdiv2:hover::before {
+    transform: scale(1.2); 
   }
   .sixth-div{
     margin-top: 11px;
     display: flex;
   }
-  .subdiv3{
+
+
+  .subdiv3 {
+    position: relative;
+    width: 50%; 
     height: 425px; 
-    width: 50%;
-    margin-right: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('./assets/images/img7.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    color: black; 
+    color: white;
+    overflow: hidden;
   }
-  .subdiv4{
-    height: 425px; 
-    width: 50%;
-    margin-left: 5px;
+  
+  .subdiv3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/images/img7.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .subdiv3:hover::before {
+    transform: scale(1.2); 
+  }
+
+
+  .subdiv4 {
+    position: relative;
+    width: 50%; 
+    height: 425px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .subdiv4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('./assets/images/img8.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    color: black; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .subdiv4:hover::before {
+    transform: scale(1.2); 
   }
   .seventh-div{
     margin-top: 11px;
     display: flex;
   }
-  .subdiv5{
+
+  .subdiv5 {
+    position: relative;
+    width: 50%; 
     height: 425px; 
-    width: 50%;
-    margin-right: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white; 
+    overflow: hidden;
+  }
+  
+  .subdiv5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('./assets/images/img9.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
   }
-  .subdiv6{
+  
+  .subdiv5:hover::before {
+    transform: scale(1.2); 
+  }
+
+
+  .subdiv6 {
+    position: relative;
+    width: 50%; 
     height: 425px; 
-    width: 50%;
-    margin-left: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('./assets/images/img10.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
     color: white; 
+    overflow: hidden;
   }
+  
+  .subdiv6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/images/img10.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .subdiv6:hover::before {
+    transform: scale(1.2);
+  }
+
+
   .second-heading{
     font-size: 30px;
     font-weight: 500;
@@ -274,19 +383,32 @@ body{
     margin: 0px 0px 16px;
     margin-bottom: 16px;
     margin-top: 40px;
+    position: relative;
+    z-index: 1;
+    color: black;
   }
   .second-para{
     font-size: 18px;
     font-weight: 500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px 0px 14px;
+    position: relative;
+    z-index: 1;
+    color: black;
   }
   .secondlast-footer{
     height: 90px;
+    margin-left: 50px;
     display: flex;
     justify-content: space-aroun;
     margin-top: 80px;
     margin-bottom: 70px;
+  }
+  .subinnerdiv{
+    margin-top: -300px;
+  }
+  .subh2p{
+    color: white;
   }
   .details{
     background: #f9f9f9;
@@ -324,6 +446,7 @@ body{
   }
   .footer{
     display: flex;
+    margin-left: 80px;
   }
   .footer-divs{
     width: 215px;
@@ -393,7 +516,7 @@ body{
   }
   .hr{
     width: 1170px;
-    margin-left: 90px;
+    margin-left: 160px;
     margin-top: 40px;
     height: 0.5px;
     border: none;
@@ -402,6 +525,7 @@ body{
   }
   .lastdiv{
     display: flex;
+    margin-left: 70px;
   }
   .lastp1, .lastp2{
     color: #6a6a6a;
@@ -418,6 +542,10 @@ body{
     opacity: .7;
     margin-right: 20px;
   }
+
+  /* ends here */
+
+
 
   
 
